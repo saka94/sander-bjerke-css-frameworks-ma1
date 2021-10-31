@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $primary;
+  font-family: "open sans", sans-serif;
+  color: $text;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.active {
+  color: $pink !important;
+}
+
+.nav {
+  padding: 0;
+}
+
+.nav {
+  &__container {
+    background-color: $secondary;
+    margin: 0;
+  }
+}
+
+.navbar {
+  &__container {
+    flex-direction: row-reverse;
+  }
+}
+
+.box {
+  background-color: $secondary;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 130px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: $secondary;
+}
+@media only screen and (max-width: 566px) {
+  .footer {
+    justify-content: center;
+    background-color: $white;
+  }
+}

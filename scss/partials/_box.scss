@@ -1,0 +1,14 @@
+.box {
+  &__clicked {
+    background-color: $white;
+    border-style: solid;
+    border-color: $pink;
+    border-width: 0.15rem;
+  }
+
+  &__selected {
+    @extend .box__clicked;
+    background-color: $pink;
+    border-color: $white;
+  }
+}
